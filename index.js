@@ -1,21 +1,24 @@
-// 1. Create a function `theBeatlesPlay`, which accepts two parameters--an array of
-//   musicians and an array of instruments. 
+// 1. Create a function `theBeatlesPlay`, which accepts two parameters--an array of musicians and an array of instruments. 
+// returns an array of strings containing what instruments each 
 
-const newArr= [];
+
 const theBeatlesPlay = function(arr1, arr2) {
-  for(let i=0; i<arr1.length; i++){
+  const newArr= [];
+  for(let i=0; i<arr1.length; i++) {
     newArr.push(`${arr1[i]} plays ${arr2[i]}`);
   }
   return newArr;
 }
 
 // 2. Create a function `johnLennonFacts`. 
+// returns an array of strings with exclamation points
+// takes in any array of strings and returns a new array with exclamation points added to each element
 
 
 const johnLennonFacts = function(arr) {
   let i = 0;
   const newArr = [];
-  while(i<arr.length){
+  while(i<arr.length) {
     newArr.push(`${arr[i]}!!!`);
     i++;
   }
